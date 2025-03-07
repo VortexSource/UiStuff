@@ -78,7 +78,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
             local script = Instance.new('LocalScript', ambientShadow)
         
             ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
-            Window.Size = UDim2.new(0, 230, 0, 80)
+            Window.Size = UDim2.new(0, 280, 0, 130)
             Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
