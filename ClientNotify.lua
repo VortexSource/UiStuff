@@ -14,7 +14,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     
     ambientShadow.Name = "ambientShadow"
     ambientShadow.Parent = GUI
-    ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+    ambientShadow.AnchorPoint = Vector2.new(1, 1)
     ambientShadow.BackgroundTransparency = 1.000
     ambientShadow.BorderSizePixel = 0
     ambientShadow.Position = UDim2.new(0.91525954, 0, 0.936809778, 0)
