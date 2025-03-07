@@ -1,6 +1,3 @@
--- modified version
--- Credits too BocusLuke
-
 local Nofitication = {}
 
 local GUI = game:GetService("CoreGui"):FindFirstChild("STX_Nofitication")
@@ -14,8 +11,8 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     
     ambientShadow.Name = "ambientShadow"
     ambientShadow.Parent = GUI
-    ambientShadow.AnchorPoint = Vector2.new(0.9, 0.9)
-    ambientShadow.BackgroundTransparency = 1.0
+    ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+    ambientShadow.BackgroundTransparency = 0.2
     ambientShadow.BorderSizePixel = 0
     ambientShadow.Position = UDim2.new(0.91525954, 0, 0.936809778, 0)
     ambientShadow.Size = UDim2.new(0, 0, 0, 0)
@@ -29,7 +26,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.Parent = ambientShadow
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
-    Window.Position = UDim2.new(0, 9, 0, 9)
+    Window.Position = UDim2.new(0, 5, 0, 5)
     Window.Size = UDim2.new(0, 230, 0, 80)
     Window.ZIndex = 2
     
