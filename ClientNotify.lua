@@ -26,7 +26,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
     
     Window.Name = "Window"
-    Window.BackgroundTransparency = 0.8
+    Window.BackgroundTransparency = 0.9
     Window.Parent = ambientShadow
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
