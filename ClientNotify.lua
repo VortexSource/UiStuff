@@ -17,7 +17,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     ambientShadow.AnchorPoint = Vector2.new(3, 3)
     ambientShadow.BackgroundTransparency = 1.000
     ambientShadow.BorderSizePixel = 0
-    ambientShadow.Position = UDim2.new(0.91525954, 0, 0.936809778, 0)
+    ambientShadow.Position = UDim2.new(3, 0, 3, 0)
     ambientShadow.Size = UDim2.new(0, 0, 0, 0)
     ambientShadow.Image = "rbxassetid://1316045217"
     ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
