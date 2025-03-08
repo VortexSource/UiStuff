@@ -24,7 +24,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     
     Window.Name = "Window"
     Window.Parent = ambientShadow
-    Window.BackgroundTransparency = 0.2
+    Window.BackgroundTransparency = 0
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
     Window.Position = UDim2.new(0, 5, 0, 5)
@@ -118,7 +118,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         coroutine.wrap(ORBHB_fake_script)()
     elseif SelectedType == "option" then
         ambientShadow:TweenSize(UDim2.new(0, 240, 0, 110), "Out", "Linear", 0.2)
-        Window.Size = UDim2.new(0, 230, 0, 100)
+        Window.Size = UDim2.new(0, 280, 0, 250)
         local Uncheck = Instance.new("ImageButton")
         local Check = Instance.new("ImageButton")
         
