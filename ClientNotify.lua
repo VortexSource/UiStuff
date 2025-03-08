@@ -11,10 +11,10 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     
     ambientShadow.Name = "ambientShadow"
     ambientShadow.Parent = GUI
-    ambientShadow.AnchorPoint = Vector2.new(2, 2)
+    ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
     ambientShadow.BackgroundTransparency = 1.000
     ambientShadow.BorderSizePixel = 0
-    ambientShadow.Position = UDim2.new(20, 0, 20, 0)
+    ambientShadow.Position = UDim2.new(0.91525954, 0, 0.936809778, 0)
     ambientShadow.Size = UDim2.new(0, 0, 0, 0)
     ambientShadow.Image = "rbxassetid://1316045217"
     ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
@@ -24,11 +24,10 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     
     Window.Name = "Window"
     Window.Parent = ambientShadow
-    Window.BackgroundTransparency = 0
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
-    Window.Position = UDim2.new(0, 20, 0, 20)
-    Window.Size = UDim2.new(0, 400, 0, 200)
+    Window.Position = UDim2.new(0, 5, 0, 5)
+    Window.Size = UDim2.new(0, 230, 0, 80)
     Window.ZIndex = 2
     
     Outline_A.Name = "Outline_A"
@@ -51,7 +50,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowTitle.Font = Enum.Font.GothamSemibold
     WindowTitle.Text = nofdebug.Title
     WindowTitle.TextColor3 = Color3.fromRGB(220, 220, 220)
-    WindowTitle.TextSize = 18.000
+    WindowTitle.TextSize = 12.000
     WindowTitle.TextXAlignment = Enum.TextXAlignment.Left
     
     WindowDescription.Name = "WindowDescription"
@@ -66,7 +65,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowDescription.Font = Enum.Font.GothamSemibold
     WindowDescription.Text = nofdebug.Description
     WindowDescription.TextColor3 = Color3.fromRGB(180, 180, 180)
-    WindowDescription.TextSize = 18.000
+    WindowDescription.TextSize = 12.000
     WindowDescription.TextWrapped = true
     WindowDescription.TextXAlignment = Enum.TextXAlignment.Left
     WindowDescription.TextYAlignment = Enum.TextYAlignment.Top
@@ -75,8 +74,8 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         local function ORBHB_fake_script()
             local script = Instance.new('LocalScript', ambientShadow)
         
-            ambientShadow:TweenSize(UDim2.new(0, 400, 0, 180), "Out", "Linear", 0.2)
-            Window.Size = UDim2.new(0, 400, 0, 180)
+            ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
+            Window.Size = UDim2.new(0, 230, 0, 80)
             Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
@@ -118,7 +117,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         coroutine.wrap(ORBHB_fake_script)()
     elseif SelectedType == "option" then
         ambientShadow:TweenSize(UDim2.new(0, 240, 0, 110), "Out", "Linear", 0.2)
-        Window.Size = UDim2.new(0, 280, 0, 250)
+        Window.Size = UDim2.new(0, 230, 0, 100)
         local Uncheck = Instance.new("ImageButton")
         local Check = Instance.new("ImageButton")
         
