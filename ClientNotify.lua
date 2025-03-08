@@ -11,10 +11,10 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     
     ambientShadow.Name = "ambientShadow"
     ambientShadow.Parent = GUI
-    ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+    ambientShadow.AnchorPoint = Vector2.new(2, 2)
     ambientShadow.BackgroundTransparency = 1.000
     ambientShadow.BorderSizePixel = 0
-    ambientShadow.Position = UDim2.new(0.99525954, 0, 0.996809778, 0)
+    ambientShadow.Position = UDim2.new(2, 0, 2, 0)
     ambientShadow.Size = UDim2.new(0, 0, 0, 0)
     ambientShadow.Image = "rbxassetid://1316045217"
     ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
@@ -27,7 +27,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.BackgroundTransparency = 0
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
-    Window.Position = UDim2.new(0, 10, 0, 10)
+    Window.Position = UDim2.new(0, 15, 0, 15)
     Window.Size = UDim2.new(0, 400, 0, 200)
     Window.ZIndex = 2
     
