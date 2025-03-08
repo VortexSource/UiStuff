@@ -75,7 +75,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         local function ORBHB_fake_script()
             local script = Instance.new('LocalScript', ambientShadow)
         
-            ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
+            ambientShadow:TweenSize(UDim2.new(0, 300, 0, 140), "Out", "Linear", 0.2)
             Window.Size = UDim2.new(0, 300, 0, 120)
             Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
