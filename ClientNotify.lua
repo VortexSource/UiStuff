@@ -27,7 +27,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.BackgroundTransparency = 0
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
-    Window.Position = UDim2.new(0, 15, 0, 15)
+    Window.Position = UDim2.new(0, 15, 0, 18)
     Window.Size = UDim2.new(0, 400, 0, 200)
     Window.ZIndex = 2
     
@@ -51,7 +51,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowTitle.Font = Enum.Font.GothamSemibold
     WindowTitle.Text = nofdebug.Title
     WindowTitle.TextColor3 = Color3.fromRGB(220, 220, 220)
-    WindowTitle.TextSize = 12.000
+    WindowTitle.TextSize = 18.000
     WindowTitle.TextXAlignment = Enum.TextXAlignment.Left
     
     WindowDescription.Name = "WindowDescription"
@@ -66,7 +66,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowDescription.Font = Enum.Font.GothamSemibold
     WindowDescription.Text = nofdebug.Description
     WindowDescription.TextColor3 = Color3.fromRGB(180, 180, 180)
-    WindowDescription.TextSize = 12.000
+    WindowDescription.TextSize = 18.000
     WindowDescription.TextWrapped = true
     WindowDescription.TextXAlignment = Enum.TextXAlignment.Left
     WindowDescription.TextYAlignment = Enum.TextYAlignment.Top
@@ -76,7 +76,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
             local script = Instance.new('LocalScript', ambientShadow)
         
             ambientShadow:TweenSize(UDim2.new(0, 300, 0, 140), "Out", "Linear", 0.2)
-            Window.Size = UDim2.new(0, 300, 0, 120)
+            Window.Size = UDim2.new(0, 300, 0, 140)
             Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
