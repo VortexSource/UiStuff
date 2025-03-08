@@ -14,7 +14,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     ambientShadow.AnchorPoint = Vector2.new(2, 2)
     ambientShadow.BackgroundTransparency = 1.000
     ambientShadow.BorderSizePixel = 0
-    ambientShadow.Position = UDim2.new(2, 0, 2, 0)
+    ambientShadow.Position = UDim2.new(20, 0, 20, 0)
     ambientShadow.Size = UDim2.new(0, 0, 0, 0)
     ambientShadow.Image = "rbxassetid://1316045217"
     ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
@@ -27,7 +27,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.BackgroundTransparency = 0
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
-    Window.Position = UDim2.new(0, 15, 0, 18)
+    Window.Position = UDim2.new(0, 20, 0, 20)
     Window.Size = UDim2.new(0, 400, 0, 200)
     Window.ZIndex = 2
     
@@ -75,8 +75,8 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         local function ORBHB_fake_script()
             local script = Instance.new('LocalScript', ambientShadow)
         
-            ambientShadow:TweenSize(UDim2.new(0, 300, 0, 140), "Out", "Linear", 0.2)
-            Window.Size = UDim2.new(0, 300, 0, 140)
+            ambientShadow:TweenSize(UDim2.new(0, 400, 0, 180), "Out", "Linear", 0.2)
+            Window.Size = UDim2.new(0, 400, 0, 180)
             Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
