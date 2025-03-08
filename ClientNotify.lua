@@ -28,7 +28,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
     Window.Position = UDim2.new(0, 5, 0, 5)
-    Window.Size = UDim2.new(0, 280, 0, 130)
+    Window.Size = UDim2.new(0, 400, 0, 200)
     Window.ZIndex = 2
     
     Outline_A.Name = "Outline_A"
@@ -76,7 +76,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
             local script = Instance.new('LocalScript', ambientShadow)
         
             ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
-            Window.Size = UDim2.new(0, 230, 0, 80)
+            Window.Size = UDim2.new(0, 300, 0, 120)
             Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
