@@ -27,7 +27,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.BackgroundTransparency = 0
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
-    Window.Position = UDim2.new(0, 5, 0, 5)
+    Window.Position = UDim2.new(0, 10, 0, 10)
     Window.Size = UDim2.new(0, 400, 0, 200)
     Window.ZIndex = 2
     
